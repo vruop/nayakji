@@ -5,12 +5,12 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 # Replace with your API ID, API Hash, and Bot Token
-API_ID = "21567814"
-API_HASH = "cd7dc5431d449fd795683c550d7bfb7e"
-BOT_TOKEN = "7598355196:AAEPiLJKsr2jIL3QAPkeLpS-w7OR2qKL48o"
+API_ID = "25566754"
+API_HASH = "27609daf8ee847978797a359024e7607"
+BOT_TOKEN = "7561919143:AAGsru-9cJ1yT2fWpQ1IY7SlElFebXTnA54"
 
 # Telegram channel where files will be forwarded
-CHANNEL_USERNAME = "Internationalstudyorganization"  # Replace with your channel username
+CHANNEL_USERNAME = "@htmlpowerBot"  # Replace with your channel username
 
 # Initialize Pyrogram Client
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
@@ -50,7 +50,7 @@ def categorize_urls(urls):
 
         elif "/master.mpd" in url:
             vid_id = url.split("/")[-2]
-            new_url = f"https://player.muftukmall.site/?id={vid_id}"
+            new_url = f"https://stream.pwjarvis.app/id={vid_id}"
             videos.append((name, new_url))
 
         elif ".zip" in url:
@@ -120,7 +120,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .subheading {{
-            font-size: 16px;
+            font-size: 20px;
             margin-top: 10px;
             color: #ccc;
             font-weight: normal;
@@ -287,7 +287,7 @@ def generate_html(file_name, videos, pdfs, others):
 <body>
     <div class="header">
         {file_name_without_extension}
-        <div class="subheading">📥 Extracted By: <a href="https://t.me/Strangerboy27_bot_strangerboy" target="_blank">STRANGER BOYS</a></div>
+        <div class="subheading">HELP BY: <a href="ANJAN PERSON" target="_blank">ANJAN PERSON</a></div>
     </div>
 
     <div id="video-player">
@@ -339,7 +339,7 @@ def generate_html(file_name, videos, pdfs, others):
         </div>
     </div>
 
-    <div class="footer">Extracted By - <a href="https://t.me/Strangerboy27_bot_strangerboy" target="_blank">STRANGER BOyS/a></div>
+    <div class="footer">Extracted By - <a href="ANJAN PERSON" target="_blank">ANJAN PERSON/a></div>
 
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script>
@@ -461,7 +461,7 @@ async def start(client: Client, message: Message):
 async def handle_file(client: Client, message: Message):
     # Check if the file is a .txt file
     if not message.document.file_name.endswith(".txt"):
-        await message.reply_text("Please upload a .txt file.")
+        await message.reply_text("CHAL AB .txt FILE BHEJ😏😏")
         return
 
     # Download the file
@@ -485,7 +485,7 @@ async def handle_file(client: Client, message: Message):
         f.write(html_content)
 
     # Send the HTML file to the user
-    await message.reply_document(document=html_file_path, caption="✅ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐨𝐧𝐞!\n\n❖──── [『 WELCOME STRANGER 』](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg) ─────❖\n\n📥 ★ Extention ➤ [STRANGER BOYS](https://i.ibb.co/DgRpQhw6/photo-2025-04-30-11-42-22-7499070258104238100.jpg) \n\n❖──── [『 HAPPY ENDING समय यात्री 』](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg) ────❖")
+    await message.reply_document(document=html_file_path, caption="SAB KUCH HO GYA😎😎!\n\n------| WELCOME ANJAN PERSON |---](https://cdn.pixabay.com/photo/2023/02/22/11/52/person-7806352_1280.png) ─────❖\n\n----- Extention ➤ [ANJAN PERSON](https://cdn.pixabay.com/photo/2023/02/22/11/52/person-7806352_1280.png) \n\n-------😎😎CHAL AB BHAG YHA SE😎😎------\n(https://cdn.pixabay.com/photo/2023/02/22/11/52/person-7806352_1280.png)------")
 
     # Forward the .txt file to the channel
     await client.send_document(chat_id=CHANNEL_USERNAME, document=file_path)
@@ -496,5 +496,5 @@ async def handle_file(client: Client, message: Message):
 
 # Run the bot
 if __name__ == "__main__":
-    print("Bot is running...")
+    print("KAM CHAL RHA......")
     app.run()
