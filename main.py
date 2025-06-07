@@ -7,7 +7,7 @@ from pyrogram.types import Message
 # Replace with your API ID, API Hash, and Bot Token
 API_ID = "25566754"
 API_HASH = "27609daf8ee847978797a359024e7607"
-BOT_TOKEN = "7561919143:AAGsru-9cJ1yT2fWpQ1IY7SlElFebXTnA54"
+BOT_TOKEN = ""
 
 # Telegram channel where files will be forwarded
 CHANNEL_USERNAME = "@htmlpowerBot"  # Replace with your channel username
