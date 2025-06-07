@@ -7,13 +7,13 @@ from pyrogram.types import Message
 # Replace with your API ID, API Hash, and Bot Token
 API_ID = "25566754"
 API_HASH = "27609daf8ee847978797a359024e7607"
-BOT_TOKEN = "7408588912:AAFTD82_oWqEP4IM7iOo931UQgcOQH8d9Zg"
+BOT_TOKEN = ""
 
 # Telegram channel where files will be forwarded
-CHANNEL_USERNAME = "@htmlpowerBot"  # Replace with your channel username
+CHANNEL_USERNAME = ""  # Replace with your channel username
 
 # Initialize Pyrogram Client
-app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+app = Client("my_bot", api_id=API_ID, api_hash=API_HASH,)
 
 # Function to extract names and URLs from the text file
 def extract_names_and_urls(file_content):
